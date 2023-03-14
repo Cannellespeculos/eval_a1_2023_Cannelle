@@ -16,6 +16,10 @@ body {
   text-transform: uppercase;
 }
 
+.cap {
+  text-transform: capitalize;
+}
+
 .center {
   text-align: center;
 }
@@ -46,6 +50,16 @@ nav {
   color: white;
   width: 30%;
   height: 70px;
+}
+
+.big-img {
+  width: 100px;
+  height: 100px;
+}
+
+.art-plats {
+  display: flex;
+  align-items: flex-end;
 }
 
 .headlink {
@@ -137,6 +151,7 @@ footer {
   width: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .lastlink {
@@ -187,6 +202,10 @@ form {
   margin: 10px;
 }
 
+.lastform {
+  margin-top: 50px;
+}
+
 @media screen and (min-width: 680px) {
   nav {
     justify-content: space-around;
@@ -195,16 +214,16 @@ form {
   }
 
   .sec-table {
-    margin-left: 300px;
-    margin-right: 300px;
+    margin-left: 200px;
+    margin-right: 200px;
   }
 
   .sec-blog {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
 
   .blogart1 {
@@ -224,13 +243,28 @@ form {
   }
 
   fieldset {
-    width: 500px;
+    margin-left: 200px;
+    margin-right: 200px;
   }
 
-  form {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+  h1 {
+    font-size: 30px;
+  }
+
+  .btn--dark:hover {
+    background-color: #ef8354;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+    border-top: 2px solid #bfc0c0;
+    border-left: 2px solid #bfc0c0;
+  }
+
+  .btn--dark--end:hover {
+    background-color: #ef8354;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+    border-top: 2px solid #bfc0c0;
+    border-left: 2px solid #bfc0c0;
   }
 }
 

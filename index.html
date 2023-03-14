@@ -51,12 +51,21 @@
 
     <section>
       <h3 class="maj center marg-bottom-10">les plats a la carte</h3>
+      <article class="art-plats">
+        <img src="img-01.jpg" alt="img1" class="big-img">
+        <h3 class="maj">un super titre</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis maxime quaerat sint nihil ea necessitatibus
+          vel eius architecto autem corrupti fugiat quisquam illo delectus aliquid fuga aut, ipsum officia voluptatibus!
+        </p>
+      </article>
     </section>
+
+
     <h3 class="maj center marg-bottom-10">blog</h3>
     <section class="sec-blog">
 
       <article class="center Blogart blogart1 marg-bottom-10">
-        <img class="Blogimg" src="img-01.jpg" alt="img01">
+        <img class="Blogimg" src="pic11.jpg" alt="img01">
         <h4 class="maj">un super titre</h4>
         <p>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi
@@ -67,7 +76,7 @@
       </article>
 
       <article class="center Blogart blogart2 marg-bottom-10">
-        <img class="Blogimg" src="img-02.jpg" alt="img02">
+        <img class="Blogimg" src="pic05.jpg" alt="img02">
         <h4 class="maj">un super titre</h4>
         <p>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi
@@ -78,7 +87,7 @@
       </article>
 
       <article class="center Blogart blogart3 marg-bottom-10">
-        <img class="Blogimg" src="img-03.jpg" alt="img03">
+        <img class="Blogimg" src="pic09.jpg" alt="img03">
         <h4 class="maj">un super titre</h4>
         <p>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi
@@ -89,7 +98,7 @@
       </article>
 
       <article class="center Blogart blogart4 marg-bottom-10">
-        <img class="Blogimg" src="img-04.jpg" alt="img04">
+        <img class="Blogimg" src="pic02.jpg" alt="img04">
         <h4 class="maj">un super titre</h4>
         <p>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi
@@ -120,11 +129,24 @@
 
       <form>
         <h4 class="maj">votre jeu préféré</h4>
-        <label>Choisissez une console: <input class="input-text" type="select"></label><br>
-        <label>Choisissez un jeu: <input class="input-text"></label>
+        <label class="cap">Choisissez une console: <select class="input-text">
+            <option class="cap">--choisissez une console--</option>
+            <option class="cap">ps4</option>
+            <option class="cap">xbox</option>
+            <option class="cap">nintendo switch</option>
+          </select>
+        </label><br>
+        <label class="cap">choisissez un jeu: <select class="input-text">
+            <option class="cap">--choisissez un jeu--</option>
+            <option class="cap">resident evil</option>
+            <option class="cap">silent hill</option>
+            <option class="cap">mad father</option>
+          </select>
+        </label>
       </form>
 
-      <form>
+
+      <form class="lastform">
         <h4 class="maj">votre message</h4>
         <textarea placeholder="Saisissez votre message"></textarea><br>
         <label>cryptage du message: <input type="password" class="input-text"></label><br>
