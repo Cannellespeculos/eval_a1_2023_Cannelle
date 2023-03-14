@@ -9,21 +9,21 @@
 </head>
 
 <body>
-  <header>
+  <header class="bg-blue">
     <h1 class="maj">bon app</h1>
     <nav>
-      <a class="maj" href="">plats</a>
-      <a class="maj" href="">blogs</a>
-      <a class="maj" href="">contacts</a>
+      <a class="maj headlink" href="">plats</a>
+      <a class="maj headlink" href="">blogs</a>
+      <a class="maj headlink" href="">contacts</a>
     </nav>
     <button class="btn--dark">Dark</button>
   </header>
 
   <main>
-    <section>
+    <section class="sec-table">
       <h3 class="maj center">nos abonnements</h3>
       <table>
-        <thead>
+        <thead class="bg-blue">
           <tr>
             <th>bronze</th>
             <th>silver</th>
@@ -39,7 +39,7 @@
           </tr>
         </tbody>
 
-        <tfoot>
+        <tfoot class="bg-blue">
           <tr>
             <td>29 euros/mois</td>
             <td>79 euros/mois</td>
@@ -52,10 +52,10 @@
     <section>
       <h3 class="maj center marg-bottom-10">les plats a la carte</h3>
     </section>
+    <h3 class="maj center marg-bottom-10">blog</h3>
+    <section class="sec-blog">
 
-    <section class="center">
-      <h3 class="maj center marg-bottom-10">blog</h3>
-      <article class="center Blogart marg-bottom-10">
+      <article class="center Blogart blogart1 marg-bottom-10">
         <img class="Blogimg" src="img-01.jpg" alt="img01">
         <h4 class="maj">un super titre</h4>
         <p>
@@ -66,7 +66,7 @@
         </p>
       </article>
 
-      <article class="center Blogart marg-bottom-10">
+      <article class="center Blogart blogart2 marg-bottom-10">
         <img class="Blogimg" src="img-02.jpg" alt="img02">
         <h4 class="maj">un super titre</h4>
         <p>
@@ -77,7 +77,7 @@
         </p>
       </article>
 
-      <article class="center Blogart marg-bottom-10">
+      <article class="center Blogart blogart3 marg-bottom-10">
         <img class="Blogimg" src="img-03.jpg" alt="img03">
         <h4 class="maj">un super titre</h4>
         <p>
@@ -88,7 +88,7 @@
         </p>
       </article>
 
-      <article class="center Blogart marg-bottom-10">
+      <article class="center Blogart blogart4 marg-bottom-10">
         <img class="Blogimg" src="img-04.jpg" alt="img04">
         <h4 class="maj">un super titre</h4>
         <p>
@@ -101,7 +101,37 @@
     </section>
   </main>
 
-  <footer></footer>
+  <footer class="bg-blue">
+    <section class="center marg-bottom-10">
+      <h3 class="maj">formulaire de contact</h3>
+      <p class="marg-bottom-10">Pour plus de détails vous pouvez consultez notre site <a class="lastlink"
+          href="https://www.edenschool.fr/">ici</a></p>
+      <form class="form1">
+        <h4 class="maj">informations de contact</h4>
+        <fieldset>
+          <legend>Quel est votre age</legend>
+          <label><input type="radio" name="age" class="input-check">12 - 14</label>
+          <label><input type="radio" name="age" class="input-check">15 - 17</label>
+          <label><input type="radio" name="age" class="input-check">18 - 19</label>
+        </fieldset>
+        <label>nom: <input required type="text" class="input-text"></label><br>
+        <label>email: <input required type="email" class="input-text"></label>
+      </form>
+
+      <form>
+        <h4 class="maj">votre jeu préféré</h4>
+        <label>Choisissez une console: <input class="input-text" type="select"></label><br>
+        <label>Choisissez un jeu: <input class="input-text"></label>
+      </form>
+
+      <form>
+        <h4 class="maj">votre message</h4>
+        <textarea placeholder="Saisissez votre message"></textarea><br>
+        <label>cryptage du message: <input type="password" class="input-text"></label><br>
+        <input type="submit" class="btn--dark--end " placeholder="Envoyer votre message">
+      </form>
+    </section>
+  </footer>
   <script type="module" src="/main.js"></script>
 </body>
 
